@@ -1,0 +1,15 @@
+* faneto
+** NAME
+faneto - Tool to get all the subdomains of a domain using Certificate
+Logs
+** SYNOPSIS
+=faneto.pl [-o OUTPUT] [-v] DOMAIN=
+** DESCRIPTION
+Perl script to scrap the [[https://crt.sh][Certificate Logs]] so you can get all the
+subdomains that ever had HTTPS on it.
+
+That log is literally the Certificate Authority log or something like
+that, so if there's a DNS record of a subdomain that never had a TLS
+certificate, it won't be in the output.
+** BUGS
+Maybe.
